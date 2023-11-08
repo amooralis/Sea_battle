@@ -1,0 +1,50 @@
+.game {
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+}
+
+.ships {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #e7e7e7;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.ship__img {
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 5px;
+}
+
+.ship__img > img {
+    width: 100%;
+}
+
+.ship {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.1s;
+    padding: 8px;
+    border-radius: 8px;
+}
+
+.ship:hover {
+    background-color: #f8f8f8;
+}
+
+.ship > p {
+    font-size: 12px;
+    margin-right: 3px;
+}
+
+.ship > p:last-child {
+    margin-right: 0;
+    font-weight: 600;
+}

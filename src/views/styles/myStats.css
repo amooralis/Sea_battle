@@ -1,0 +1,38 @@
+.main {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    border: 5px solid #ff0088;
+    background-color: #ff5fb0;
+    margin-bottom: 50px;
+    font-size: 35px;
+    padding: 20px;
+}
+
+table {
+    border: 2px solid blue;
+    display: flex;
+    background-color: #b2fdbb;
+}
+
+th, td {
+    text-align: right;
+    padding: 5px 5px;
+    border: 2px solid blue;
+    font-size: 30px;
+}
+
+h3 {
+    border: 5px solid #ff0088;
+    background-color: #ff5fb0;
+    margin-bottom: 50px;
+    font-size: 35px;
+    padding: 20px;
+    width: 50%;
+}
+

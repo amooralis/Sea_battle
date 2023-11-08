@@ -1,0 +1,90 @@
+<!--  Main view  "/"  -->
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/game.css">
+    <title>{{title}}</title>
+</head>
+<body>
+<header>
+    <div class="header">
+        <div class="nav">
+            <div class="menu__item is-active" id="play">
+                <div class="menu__img">
+                    <img src="./img/game.png" alt="">
+                </div>
+                <p>Play</p>
+            </div>
+            <div class="menu__item" id="stats">
+                <div class="menu__img">
+                    <img src="./img/user.png" alt="">
+                </div>
+                <p>Stats</p>
+            </div>
+            <div class="menu__item" id="best">
+                <div class="menu__img">
+                    <img src="./img/best_players.png" alt="">
+                </div>
+                <p>Best Players</p>
+            </div>
+        </div>
+        <div class="logout">
+            <div class="menu__item" id="logout">
+                <div class="menu__img">
+                    <img src="./img/logout.png" alt="">
+                </div>
+                <p>logout</p>
+            </div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="game">
+        <div class="game-player">
+            <canvas id="player" width="400" height="400"></canvas>
+            <div class="ships" id="shipMenu">
+                <div class="ship" id="ship4">
+                    <div class="ship__img">
+                        <img src="./img/cruise.png" alt="">
+                    </div>
+                    <p>(4x cage):</p>
+                    <p id="ship_4_count"></p>
+                </div>
+                <div class="ship" id="ship3">
+                    <div class="ship__img">
+                        <img src="./img/cruise.png" alt="">
+                    </div>
+                    <p>(3x cage):</p>
+                    <p id="ship_3_count"></p>
+                </div>
+                <div class="ship" id="ship2">
+                    <div class="ship__img">
+                        <img src="./img/cruise.png" alt="">
+                    </div>
+                    <p>(2x cage):</p>
+                    <p id="ship_2_count"></p>
+                </div>
+                <div class="ship" id="ship1">
+                    <div class="ship__img">
+                        <img src="./img/cruise.png" alt="">
+                    </div>
+                    <p>(1x cage):</p>
+                    <p id="ship_1_count"></p>
+                </div>
+            </div>
+        </div>
+        <div class="game-pc">
+            <canvas id="pc" width="400" height="400"></canvas>
+        </div>
+    </div>
+</main>
+<script src="./scripts/index.js"></script>
+<script src="./scripts/game.js"></script>
+</body>
+</html>
